@@ -4,6 +4,7 @@ import style from "./Catalog.module.css";
 import Card from "../../components/card/Card";
 
 const Catalog = () => {
+  
   return (
     <>
       <Header />
@@ -24,61 +25,6 @@ const Catalog = () => {
         </button>
       </div>
       <div className="flex flex-wrap gap-11 justify-center mt-[52px]">
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/Cold_War 1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/Cold_War 1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
-        <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
-          price={"1500"}
-        />
         <Card
           img="/src/assets/picture1.svg"
           text="“Революционные техники в творчестве Джуди Чикаго”"

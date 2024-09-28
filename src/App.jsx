@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Card from "./components/card/Card";
 import Home from "./pages/home/Home";
 import Catalog from "./pages/catalog/Catalog";
 
