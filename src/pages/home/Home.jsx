@@ -29,7 +29,7 @@ const Home = () => {
         {cards.map((card) => (
           <Card
             key={card.id}
-            img={card.images && card.images.length > 0 ? card.images[0].image : null}
+            img={card.image}
             text={card.title}
             price={"1500"}
           />
