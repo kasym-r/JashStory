@@ -25,7 +25,7 @@ const Home = () => {
       <Header />
       <MainInfo />
 
-      <div className="flex flex-wrap gap-11 justify-center mt-11">
+      <div className="flex  flex-wrap gap-11 justify-center mt-11">
         {cards.map((card) => (
           <Card
             key={card.id}
