@@ -1,0 +1,6 @@
+.mainDiv{
+    background-image: url('/src/assets/japanese-art\ 1.svg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    @apply h-[500px] flex justify-center mt-[40px];
+}

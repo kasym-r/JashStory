@@ -3,6 +3,7 @@ import style from "./MainInfo.module.css";
 
 const MainInfo = () => {
   const navigate = useNavigate();
+  
   const handleCatalogClick = () => {
     navigate("/catalog");
   };

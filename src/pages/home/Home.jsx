@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Card from "../../components/card/Card";
 import Header from "../../components/header/Header";
 import MainInfo from "./MainInfo";
+import OlympHistory from "../../components/olympHistory/OlympHistory";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
@@ -35,6 +36,8 @@ const Home = () => {
           />
         ))}
       </div>
+
+      <OlympHistory />
     </>
   );
 };
