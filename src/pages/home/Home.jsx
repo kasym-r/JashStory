@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../components/card/Card";
 import Header from "../../components/header/Header";
-import MainInfo from "./ui/mainInfo/MainInfo";
+import MainInfo from "./MainInfo";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
