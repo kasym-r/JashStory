@@ -54,9 +54,6 @@ const Header = () => {
       )} */}
 
       {/* Login Button */}
-      <button className="hidden lg:block text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover:opacity-90 transition-all duration-300 ease-in-out">
-        Войти
-      </button>
     </header>
   );
 };
