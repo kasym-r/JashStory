@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/header/Header";
-import style from "./Catalog.module.css";
+import style from "./Catalog.module.scss";
 import Card from "../../components/card/Card";
 
 const Catalog = () => {

@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import style from "./MainInfo.module.css";
+import style from "./MainInfo.module.scss";
 
 const MainInfo = () => {
   const navigate = useNavigate();
+  
   const handleCatalogClick = () => {
     navigate("/catalog");
   };
