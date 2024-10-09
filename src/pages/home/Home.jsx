@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../components/card/Card";
 import Header from "../../components/header/Header";
-import MainInfo from "./MainInfo";
+import MainInfo from "./mainInfo/MainInfo";
 import Footer from "../../components/footer/Footer";
 
 const Home = () => {
@@ -36,7 +36,6 @@ const Home = () => {
           />
         ))}
       </div>
-
       <Footer />
     </>
   );
