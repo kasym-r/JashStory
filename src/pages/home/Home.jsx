@@ -3,6 +3,7 @@ import Card from "../../components/card/Card";
 import Header from "../../components/header/Header";
 import MainInfo from "./mainInfo/MainInfo";
 import Footer from "../../components/footer/Footer";
+import Resources from "./resources/Resources";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
@@ -36,6 +37,8 @@ const Home = () => {
           />
         ))}
       </div>
+
+      <Resources />
       <Footer />
     </>
   );
