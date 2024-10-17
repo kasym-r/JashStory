@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import style from "./Catalog.module.scss";
 import Card from "../../components/card/Card";
+import img from "../../assets/image2.jpg"
 
 const Catalog = () => {
   
@@ -26,7 +27,7 @@ const Catalog = () => {
       </div>
       <div className="flex flex-wrap gap-11 justify-center mt-[52px]">
         <Card
-          img="/src/assets/image2.jpg"
+          img={img}
           text="Эпос 'Манас'"
           price={"1500"}
         />
