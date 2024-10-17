@@ -26,8 +26,8 @@ const Catalog = () => {
       </div>
       <div className="flex flex-wrap gap-11 justify-center mt-[52px]">
         <Card
-          img="/src/assets/picture1.svg"
-          text="“Революционные техники в творчестве Джуди Чикаго”"
+          img="/src/assets/image2.jpg"
+          text="Эпос 'Манас'"
           price={"1500"}
         />
       </div>
