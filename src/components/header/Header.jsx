@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between my-[40px] px-[40px] gap-[172px]">
-      <a href='/' className="text-[24px] font-bold">
+      <a href='/' className="text-[24px] font-bold font-unbounded">
         Jash Story
       </a>
 
@@ -20,7 +20,7 @@ const Header = () => {
         </button>
       </div>
 
-      <nav aria-label="Main Navigation" className="hidden lg:flex">
+      <nav aria-label="Main Navigation" className="hidden lg:flex font-sf">
         <ul className="flex gap-12 hover:cursor-pointer">
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
@@ -55,6 +55,7 @@ const Header = () => {
 
       {/* Login Button */}
       <p className="hidden lg:block text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover: transition-all duration-300 ease-in-out">
+        Войти
       </p>
     </header>
   );

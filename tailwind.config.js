@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // This should cover your component files
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sf: ['"SF UI Display"', 'sans-serif'],
+        unbounded: ["Unbounded", 'sans-swrif']
+      }
+    },
   },
   plugins: [],
 };

@@ -13,7 +13,7 @@ import styles from "./NewsText.module.scss";
 
 const NewsText = () => {
   return (
-    <div className={styles.div}>
+    <div className={`${styles.div} font-sf`}>
       <h2>Эпос Манас</h2>
       <p>
         Эпос "Манас" — это одно из величайших произведений устного народного
