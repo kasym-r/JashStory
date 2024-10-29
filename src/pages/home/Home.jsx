@@ -27,18 +27,18 @@ const Home = () => {
       <Header />
       <MainInfo />
 
-      <div className="flex  flex-wrap gap-11 justify-center mt-11">
-        {/* {cards.map((card) => (
+      {/* <div className="flex  flex-wrap gap-11 justify-center mt-11">
+        {cards.map((card) => (
           <Card
             key={card.id}
             img={card.image}
             text={card.title}
             price={"1500"}
           />
-        ))} */}
-      </div>
+        ))} 
+      </div> */}
 
-      {/* <Resources /> */}
+       {/* <Resources /> */}
       <Footer />
     </>
   );
