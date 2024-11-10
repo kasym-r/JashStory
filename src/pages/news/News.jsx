@@ -1,7 +1,7 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import Info from "./info/Info";
 import NewsText from "./newsText/NewsText";
+import Info from "./info/Info"
 
 const News = () => {
 
