@@ -9,15 +9,15 @@ const Home = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://jashstory.pp.ua/api/post/");
-        const data = await response.json();
-        setCards(data.results);
-      } catch (error) {
-        console.error("Ошибка при получении данных:", error);
-      }
-    };
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await fetch("https://jashstory.pp.ua/api/post/");
+    //     const data = await response.json();
+    //     setCards(data.results);
+    //   } catch (error) {
+    //     console.error("Ошибка при получении данных:", error);
+    //   }
+    // };
 
     fetchData();
   }, []);
@@ -27,7 +27,7 @@ const Home = () => {
       <Header />
       <MainInfo />
 
-      <div className="flex  flex-wrap gap-11 justify-center mt-11">
+      {/* <div className="flex  flex-wrap gap-11 justify-center mt-11">
         {cards.map((card) => (
           <Card
             key={card.id}
@@ -36,7 +36,7 @@ const Home = () => {
             price={"1500"}
           />
         ))} 
-      </div> 
+      </div>  */}
       <Resources />
       <Footer />
     </>
