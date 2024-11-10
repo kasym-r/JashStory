@@ -15,7 +15,7 @@ const MainInfo = () => {
           Народ не знающий свою историю лишает себя корней
         </p>
 
-        <div className="text-center flex flex-col sm:flex-row gap-[10px] md:gap-[20px] justify-center font-sf">
+        <div className="font-sfpro text-center flex flex-col sm:flex-row gap-[10px] md:gap-[20px] justify-center">
           <button
             onClick={handleCatalogClick}
             className="w-[200px] md:w-[234px] bg-[#CC67F8] font-medium md:text-xl text-white py-[8px] px-[10px] rounded-[24px]"

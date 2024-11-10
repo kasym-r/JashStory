@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between my-[40px] px-[40px] gap-[172px]">
-      <a href='/' className="text-[24px] font-bold font-unbounded">
+      <a href='/' className="font-unbounded text-[24px] font-bold">
         Jash Story
       </a>
 

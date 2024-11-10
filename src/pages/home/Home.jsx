@@ -8,19 +8,19 @@ import Resources from "./resources/Resources";
 const Home = () => {
   const [cards, setCards] = useState([]);
 
-  useEffect(() => {
-    // const fetchData = async () => {
-    //   try {
-    //     const response = await fetch("https://jashstory.pp.ua/api/post/");
-    //     const data = await response.json();
-    //     setCards(data.results);
-    //   } catch (error) {
-    //     console.error("Ошибка при получении данных:", error);
-    //   }
-    // };
+  // useEffect(() => {
+  //   // const fetchData = async () => {
+  //   //   try {
+  //   //     const response = await fetch("https://jashstory.pp.ua/api/post/");
+  //   //     const data = await response.json();
+  //   //     setCards(data.results);
+  //   //   } catch (error) {
+  //   //     console.error("Ошибка при получении данных:", error);
+  //   //   }
+  //   // };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <>
