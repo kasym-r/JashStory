@@ -1,7 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import style from "./MainInfo.module.scss";
+import { useInView } from "react-intersection-observer";
 
 const MainInfo = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1
+  });
+
   const navigate = useNavigate();
   
   const handleCatalogClick = () => {

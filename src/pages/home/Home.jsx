@@ -38,6 +38,7 @@ const Home = () => {
         ))} 
       </div>  */}
       <Resources />
+      <Card />
       <Footer />
     </>
   );

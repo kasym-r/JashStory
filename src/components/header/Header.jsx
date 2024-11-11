@@ -1,7 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
+  
+  const handleAboutClick = () => {
+    navigate("/about");
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,11 +28,11 @@ const Header = () => {
       </div>
 
       <nav aria-label="Main Navigation" className="hidden lg:flex font-sf">
-        <ul className="flex gap-12 hover:cursor-pointer">
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">О нас</li>
+        <ul className="flex items-center gap-12 hover:cursor-pointer">
+          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">Мировая история</li>
+          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
+          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
+          <li onClick={handleAboutClick} className="hover:text-[18px] transition-all duration-300 ease-in-out">О нас</li>
         </ul>
       </nav>
 
@@ -39,7 +46,7 @@ const Header = () => {
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">О нас</li>
+          <li onClick={handleAboutClick} className="hover:text-[20px] transition-all duration-300 ease-in-out">О нас</li>
         </ul>
       </div>
       {/* {isMenuOpen && (
