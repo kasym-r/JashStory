@@ -4,6 +4,9 @@ import Header from "../../components/header/Header";
 import MainInfo from "./mainInfo/MainInfo";
 import Footer from "../../components/footer/Footer";
 import Resources from "./resources/Resources";
+import img from "../../assets/image2.jpg"
+import OlympiadHistory from "./olympiadHistory/OlympiadHistory";
+import BestArticles from "./bestArticles/BestArticles";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
@@ -38,7 +41,13 @@ const Home = () => {
         ))} 
       </div>  */}
       <Resources />
-      <Card />
+      <Card
+          img={img}
+          text="Эпос 'Манас'"
+          price={"1500"}
+        />
+      <OlympiadHistory />
+      <BestArticles />
       <Footer />
     </>
   );

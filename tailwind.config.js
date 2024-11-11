@@ -13,6 +13,9 @@ module.exports = {
       },
       colors: {
         GrayBg: '#393939'
+      },
+      backgroundImage: {
+        'olymp-bg': "url('./assets/japanese-art 1.svg')",
       }
     },
   },
