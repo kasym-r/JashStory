@@ -7,6 +7,7 @@ import Resources from "./resources/Resources";
 import img from "../../assets/image2.jpg"
 import OlympiadHistory from "./olympiadHistory/OlympiadHistory";
 import BestArticles from "./bestArticles/BestArticles";
+import Articles from "./articles/Articles";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
@@ -41,11 +42,12 @@ const Home = () => {
         ))} 
       </div>  */}
       <Resources />
-      <Card
+      <Articles />
+      {/* <Card
           img={img}
           text="Эпос 'Манас'"
           price={"1500"}
-        />
+        /> */}
       <OlympiadHistory />
       <BestArticles />
       <Footer />

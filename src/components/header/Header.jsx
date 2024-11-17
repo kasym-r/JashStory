@@ -61,7 +61,7 @@ const Header = () => {
       )} */}
 
       {/* Login Button */}
-      <p className="hidden lg:block text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover: transition-all duration-300 ease-in-out">
+      <p className="hidden lg:block text-white bg-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover: transition-all duration-300 ease-in-out">
         Войти
       </p>
     </header>
