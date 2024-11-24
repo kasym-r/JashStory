@@ -10,44 +10,13 @@ import BestArticles from "./bestArticles/BestArticles";
 import Articles from "./articles/Articles";
 
 const Home = () => {
-  const [cards, setCards] = useState([]);
-
-  // useEffect(() => {
-  //   // const fetchData = async () => {
-  //   //   try {
-  //   //     const response = await fetch("https://jashstory.pp.ua/api/post/");
-  //   //     const data = await response.json();
-  //   //     setCards(data.results);
-  //   //   } catch (error) {
-  //   //     console.error("Ошибка при получении данных:", error);
-  //   //   }
-  //   // };
-
-  //   fetchData();
-  // }, []);
 
   return (
     <>
       <Header />
       <MainInfo />
-
-      {/* <div className="flex  flex-wrap gap-11 justify-center mt-11">
-        {cards.map((card) => (
-          <Card
-            key={card.id}
-            img={card.image}
-            text={card.title}
-            price={"1500"}
-          />
-        ))} 
-      </div>  */}
       <Resources />
       <Articles />
-      {/* <Card
-          img={img}
-          text="Эпос 'Манас'"
-          price={"1500"}
-        /> */}
       <OlympiadHistory />
       <BestArticles />
       <Footer />

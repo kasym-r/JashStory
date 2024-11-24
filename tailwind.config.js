@@ -16,6 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         'olymp-bg': "url('./assets/japanese-art 1.svg')",
+        'login-bg': "url('./assets/authorization.svg')"
       }
     },
   },

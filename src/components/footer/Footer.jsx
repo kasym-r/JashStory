@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.scss"; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import logowhite from '../../assets/logowhite.svg'
 
 const Footer = () => {
 
@@ -10,7 +11,10 @@ const Footer = () => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           
           <div className="mb-8 md:mb-0">
-            <h3 className="text-lg font-bold">Jash Story</h3>
+            <h3 className="flex items-center gap-1 text-lg font-bold">
+              <img src={logowhite} alt="logowhite" />
+              Jash Story
+              </h3>
             <p className="mt-2">Свяжитесь с нами любым <br /> удобным способом</p>
             <div className={`${styles.iconContainer} flex mt-4`}>
               <a href="https://instagram.com" className={styles.icon}>

@@ -11,7 +11,7 @@ const Catalog = () => {
       <Header />
       <div className={style.mainDiv}>
         <div className="my-auto flex flex-col gap-[20px] md:gap-[40px] justify-center items-center px-4 md:px-0">
-          <p className="text-[52px] font-bold md:text-[52px] text-white text-center w-[90%] md:w-[70%]">
+          <p className="text-[52px] font-unbounded font-bold md:text-[52px] text-white text-center w-[90%] md:w-[70%]">
             Каталог
           </p>
         </div>

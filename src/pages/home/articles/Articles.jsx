@@ -5,6 +5,22 @@ import img from "../../../assets/image2.jpg"
 
 const Articles = () => {
 
+  // const [cards, setCards] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("https://jashstory.pp.ua/api/post/");
+  //       const data = await response.json();
+  //       setCards(data.results);
+  //     } catch (error) {
+  //       console.error("Ошибка при получении данных:", error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -19,21 +35,16 @@ const Articles = () => {
       <h2 className="text-white font-unbounded font-medium text-5xl mb-10">
         СТАТЬИ
       </h2>
-        <Card 
-        img={img}
-        text="Эпос 'Манас'"
-        price={"1500"}
-        />
-        <Card 
-        img={img}
-        text="Эпос 'Манас'"
-        price={"1500"}
-        />
-        <Card 
-        img={img}
-        text="Эпос 'Манас'"
-        price={"1500"}
-        />
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {cards.map((card) => (
+          <Card
+            key={card.id}
+            img={card.image}
+            text={card.title}
+            price={"1500"} 
+          />
+        ))}
+      </div> */}
     </div>
   );
 };
