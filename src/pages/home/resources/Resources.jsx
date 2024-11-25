@@ -35,26 +35,22 @@ const Resources = () => {
           </p>
         </div>
 
-        <div ref={ref} className={`relative 
+        <div ref={ref} className={`
         transition-opacity duration-700 ease-in-out 
         transform ${inView ? 'opacity-100' : 'opacity-0'}`}>
           <img src={img} className="w-full h-auto rounded-3xl" />
-          <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
         </div>
         <div ref={ref} className={`grid grid-rows-2 grid-cols-2 gap-10
         transition-opacity duration-700 ease-in-out 
         transform ${inView ? 'opacity-100' : 'opacity-0'}`}>
-          <div ref={ref} className="row-span-1 col-span-2 relative">
+          <div ref={ref} className="row-span-1 col-span-2">
             <img src={img1} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
           </div>
-          <div className="row-span-1 col-span-1 relative">
+          <div className="row-span-1 col-span-1">
             <img src={img2} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
           </div>
-          <div className="row-span-1 col-span-1 relative">
+          <div className="row-span-1 col-span-1">
             <img src={img3} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
           </div>
         </div>
       </div>
