@@ -40,7 +40,7 @@ const Articles = () => {
         {cards.map((card) => (
           <Card
             key={card.id}
-            img={card.images.image}
+            img={card.image}
             text={card.title}
             price={"1500"} 
           />
