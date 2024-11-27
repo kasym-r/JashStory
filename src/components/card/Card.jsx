@@ -17,7 +17,7 @@ const Card = ({ img, text, price }) => {
 
       <div
         ref={ref}
-        className={`bg-white w-[424px] rounded-[15px]  flex flex-col p-[20px] gap-4 
+        className={`bg-white  rounded-[15px]  flex flex-col p-[20px] gap-4 
       transition-opacity duration-700 ease-in-out 
       transform ${inView ? "opacity-100" : "opacity-0"}`}
       >
