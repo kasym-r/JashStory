@@ -34,7 +34,7 @@ const Header = () => {
       </div>
 
       <nav aria-label="Main Navigation" className="hidden xl:flex font-sf">
-        <ul className="flex items-center gap-12 md:gap-8 hover:cursor-pointer">
+        <ul className="flex items-center gap-12 md:gap-8 hover:cursor-pointer text-[#393939] font-light">
           <li className="hover:text-[18px] transition-all duration-300 ease-in-out">Мировая история</li>
           <li className="hover:text-[18px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
           <li className="hover:text-[18px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
