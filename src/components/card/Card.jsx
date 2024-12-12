@@ -22,7 +22,7 @@ const Card = ({ img, text, price }) => {
       transform ${inView ? "opacity-100" : "opacity-0"}`}
       >
         <img
-          className="w-[384px] h-[166px] rounded-[23px]"
+          className="w-auto h-[200px] rounded-[23px]"
           src={img}
           alt="img"
         />

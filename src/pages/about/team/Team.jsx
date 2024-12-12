@@ -1,5 +1,14 @@
 import React from "react";
+import daniel from './pics/daniel.svg'
+import isadora from './pics/isadora.svg'
 import kasym from './pics/kasym.svg'
+import amaliya from './pics/amaliya.svg'
+import amina from './pics/amina.svg'
+import saida from './pics/saida.svg'
+import ramzan from './pics/ramzan.svg'
+import bibinur from './pics/bibinur.svg'
+import nurdin from './pics/nurdin.svg'
+import sezimtal from './pics/sezimtal.svg'
 
 const Team = () => {
   return (
@@ -20,54 +29,54 @@ const Team = () => {
       </div>
       <div className="grid grid-cols-5 grid-rows-2 gap-10">
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
+          <img src={daniel}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Daniel Satybaldiev</button>
+          <span className="font-sfpro">Founder & CEO</span>
+        </div>
+        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
+          <img src={isadora}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Isadora Chokmorova</button>
+          <span className="font-sfpro">Co-founder & Designer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={kasym}/>
           <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
+          <span className="font-sfpro">Frontend & Team Lead</span>
+        </div>
+        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
+          <img src={amaliya}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Amaliya Yryskeldieva</button>
+          <span className="font-sfpro">Illustrator</span>
+        </div>
+        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
+          <img src={amina}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Amina Anarkulova</button>
+          <span className="font-sfpro">Face of the project</span>
+        </div>
+        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
+          <img src={saida}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Saida Namasbekova</button>
+          <span className="font-sfpro">SMM specialist</span>
+        </div>
+        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
+          <img src={ramzan}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Ramzan Satkynov</button>
           <span className="font-sfpro">Frontend Developer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
+          <img src={bibinur}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Bibinur Latipzhanova</button>
+          <span className="font-sfpro">Designer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
+          <img src={nurdin}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Nurdin Taabaldyev</button>
+          <span className="font-sfpro">Backend Developer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
-        </div>
-        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
-        </div>
-        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
-        </div>
-        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
-        </div>
-        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
-        </div>
-        <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
-          <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
-          <span className="font-sfpro">Frontend Developer</span>
+          <img src={sezimtal}/>
+          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Sezimtal Tilekmatova</button>
+          <span className="font-sfpro">Marketer</span>
         </div>
       </div>
     </div>
