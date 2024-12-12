@@ -1,8 +1,8 @@
 import React from "react";
-import img from "../../../assets/Rectangle.svg";
-import img1 from "../../../assets/Rectangle1.svg";
-import img2 from "../../../assets/Rectangle2.svg";
-import img3 from "../../../assets/Rectangle3.svg";
+import img from "../../../assets/babilontower.svg";
+import img1 from "../../../assets/fallofrome.svg";
+import img2 from "../../../assets/napoleonwar.svg";
+import img3 from "../../../assets/europe.svg";
 import { useInView } from "react-intersection-observer";
 
 const Resources = () => {
@@ -38,7 +38,7 @@ const Resources = () => {
         <div ref={ref} className={`
         transition-opacity duration-700 ease-in-out 
         transform ${inView ? 'opacity-100' : 'opacity-0'}`}>
-          <img src={img} className="w-full h-auto rounded-3xl" />
+          <img src={img} className="w-full h-full rounded-3xl" />
         </div>
         <div ref={ref} className={`grid grid-rows-2 grid-cols-2 gap-10
         transition-opacity duration-700 ease-in-out 
