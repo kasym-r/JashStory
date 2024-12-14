@@ -7,13 +7,13 @@ const PrevOlympiads = () => {
       <h1 className="font-unbounded font-medium text-5xl text-[#303030] text-center">
         ПРОВЕДЕННЫЕ ОЛИМПИАДЫ
       </h1>
-      <span className="flex max-w-[40%] text-[#343434] font-sfpro text-lg mt-12">
+      <span className="flex max-w-[40%] text-[#343434] font-sfpro text-lg my-12">
         Наш проект не только делиться статьями, ресурсами и разными материалами,
         но также мы проводим специально для школьников по несколько раз в год
         Олимпиады по истории с отличными призами, для закрепления их знаний и
         мотивации продолжать дальше изучать историю
       </span>
-      <div className="bg-white flex items-center rounded-3xl gap-9 p-12 shadow-xl">
+      <div className="bg-white flex items-center rounded-3xl gap-9 p-12 shadow-2xl">
         <div className="">
           <img className="rounded-3xl" src={prevolymp}/>
         </div>
