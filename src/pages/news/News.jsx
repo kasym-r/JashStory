@@ -8,7 +8,7 @@ const News = () => {
   return (
     <>
       <Header />
-      <Info />
+      {/* <Info /> */}
       <NewsText/>
       <Footer />
     </>
