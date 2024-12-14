@@ -1,7 +1,7 @@
-module.exports = {
+export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}", // This should cover your component files
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
