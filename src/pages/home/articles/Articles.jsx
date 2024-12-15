@@ -42,7 +42,8 @@ const Articles = () => {
             key={card.id}
             img={card.image}
             text={card.title}
-            price={"1500"}
+            price={"100$"}
+            bgColor="bg-white"
           />
         ))}
       </div>

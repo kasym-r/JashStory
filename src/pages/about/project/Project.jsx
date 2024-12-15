@@ -3,7 +3,7 @@ import img from "../../../assets/photoofall.svg";
 
 const Project = () => {
   return (
-    <div className="grid grid-cols-2 items-center gap-10 py-20 px-10 bg-[#F9F8F7]">
+    <div className="grid grid-cols-2 items-center gap-10 py-20 px-10">
       <div>
         <img src={img} className="w-full rounded-3xl" />
       </div>

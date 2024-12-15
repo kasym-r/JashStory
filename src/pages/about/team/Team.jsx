@@ -12,7 +12,7 @@ import sezimtal from './pics/sezimtal.svg'
 
 const Team = () => {
   return (
-    <div className="px-10 flex flex-col bg-[#F9F8F7]">
+    <div className="px-10 flex flex-col">
       <h2 className="font-unbounded font-medium text-[42px] text-[#303030]">
         НАША КОМАНДА
       </h2>

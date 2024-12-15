@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/header/Header";
 import style from "./Catalog.module.scss";
 import Card from "../../components/card/Card";
 import img from "../../assets/image2.jpg"
 
 const Catalog = () => {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://jashstory.pp.ua/api/post/");
+        const data = await response.json();
+        setCards(data.results);
+      } catch (error) {
+        console.error("Ошибка при получении данных:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   
   return (
     <>
@@ -25,12 +40,16 @@ const Catalog = () => {
           <img src="/src/assets/searchIcon.svg"/>
         </button>
       </div>
-      <div className="flex flex-wrap gap-11 justify-center mt-[52px]">
-        <Card
-          img={img}
-          text="Эпос 'Манас'"
-          price={"1500"}
-        />
+      <div className="m-10 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-11">
+      {cards.map((card) => (
+          <Card
+            key={card.id}
+            img={card.image}
+            text={card.title}
+            price={"100$"}
+            bgColor="bg-[#E5E5E5]"
+          />
+        ))}
       </div>
       <div className="mt-[52px] mb-[52px] flex justify-center">
         <button className="rounded-[29px] text-white text-[22px] font-medium bg-[#333335] px-[27px] py-[4px] hover:opacity-90 transition-all duration-300 ease-in-out">

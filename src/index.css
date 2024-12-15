@@ -8,3 +8,7 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    background-color: #F9F8F7;
+}
+

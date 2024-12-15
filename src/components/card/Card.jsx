@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
-const Card = ({ img, text, price }) => {
+const Card = ({ img, text, price, bgColor = "bg-white" }) => {
   const navigate = useNavigate();
 
   const { ref, inView } = useInView({
@@ -17,7 +17,7 @@ const Card = ({ img, text, price }) => {
 
       <div
         ref={ref}
-        className={`bg-white  rounded-[15px]  flex flex-col p-[20px] gap-4 
+        className={`${bgColor}  rounded-[15px]  flex flex-col p-[20px] gap-4 
       transition-opacity duration-700 ease-in-out 
       transform ${inView ? "opacity-100" : "opacity-0"}`}
       >

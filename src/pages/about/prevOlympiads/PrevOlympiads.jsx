@@ -3,7 +3,7 @@ import prevolymp from '../../../assets/prevolymp1.jpeg'
 
 const PrevOlympiads = () => {
   return (
-    <div className="px-10 py-20 bg-[#F9F8F7]">
+    <div className="px-10 py-20">
       <h1 className="font-unbounded font-medium text-5xl text-[#303030] text-center">
         ПРОВЕДЕННЫЕ ОЛИМПИАДЫ
       </h1>
