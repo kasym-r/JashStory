@@ -1,0 +1,22 @@
+.article-container {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.article-container p img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.article-container p img + p,
+.article-container p > strong {
+    text-align: center;
+    display: block;
+    
+}
+
+.article-container p:nth-child(1) {
+    text-align: center;
+}

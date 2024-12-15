@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/header/Header";
-import style from "./Catalog.module.scss";
+import style from "./Catalog.module.css";
 import Card from "../../components/card/Card";
-import img from "../../assets/image2.jpg"
+import Footer from "../../components/footer/Footer";
 
 const Catalog = () => {
   const [cards, setCards] = useState([]);
@@ -43,6 +43,7 @@ const Catalog = () => {
       <div className="m-10 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-11">
       {cards.map((card) => (
           <Card
+            id={card.id}
             key={card.id}
             img={card.image}
             text={card.title}
@@ -56,6 +57,7 @@ const Catalog = () => {
           Показать больше
         </button>
       </div>
+      <Footer />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
-const Card = ({ img, text, price, bgColor = "bg-white" }) => {
+const Card = ({ id, img, text, price, bgColor = "bg-white" }) => {
   const navigate = useNavigate();
 
   const { ref, inView } = useInView({
@@ -10,7 +10,7 @@ const Card = ({ img, text, price, bgColor = "bg-white" }) => {
   });
 
   const handleArticleClick = () => {
-    navigate("/article/:id");
+    navigate(`/article/${id}`);
   };
 
   return (

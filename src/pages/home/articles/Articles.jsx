@@ -39,6 +39,7 @@ const Articles = () => {
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-11">
         {cards.map((card) => (
           <Card
+            id={card.id}
             key={card.id}
             img={card.image}
             text={card.title}
