@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import style from "./Catalog.module.css";
 import Card from "../../components/card/Card";
 import Footer from "../../components/footer/Footer";
+import search from '../../assets/searchIcon.svg'
 
 const Catalog = () => {
   const [cards, setCards] = useState([]);
@@ -37,7 +38,7 @@ const Catalog = () => {
           className="w-screen py-2 pr-14 pl-4 border h-[60px] border-black rounded-[20px] focus:outline-none"
         />
         <button className="absolute right-[7px] top-1/2 transform -translate-y-1/2 text-gray-500">
-          <img src="/src/assets/searchIcon.svg"/>
+          <img src={search} />
         </button>
       </div>
       <div className="m-10 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-11">
