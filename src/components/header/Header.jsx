@@ -23,7 +23,7 @@ const Header = () => {
     <header className="flex justify-between my-[40px] px-[40px] gap-36">
       <a href='/' className="flex items-center gap-1 font-unbounded text-[24px] font-bold">
         <img src={logoblack}/>
-        Jash Story
+        <span className='hidden sm:inline'>Jash Story</span>
       </a>
 
       {/* Burger Menu Button for Mobile */}
@@ -45,7 +45,7 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? 'max-h-[300px]' : 'max-h-0'
-        } overflow-hidden transition-all duration-500 ease-in-out absolute top-[80px] left-0 w-full bg-white xl:hidden`}
+        } overflow-hidden transition-all duration-500 ease-in-out absolute top-[80px] left-0 w-full  bg-[#E5E5E5] xl:hidden`}
       >
         <ul className="flex flex-col items-center gap-4 py-4">
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>

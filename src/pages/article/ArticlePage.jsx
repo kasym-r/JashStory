@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import { ClipLoader } from 'react-spinners';
-import './ArticleStyles.css';
+import { ClipLoader } from "react-spinners";
+import "./ArticleStyles.css";
 
 const ArticlePage = () => {
   const { id } = useParams();
@@ -30,10 +30,14 @@ const ArticlePage = () => {
 
   if (loading) {
     return (
+      <>
+        <Header />
         <div className="flex justify-center items-center min-h-screen flex-col">
-        <ClipLoader size={100} color="#3498db" loading={loading} />
-        <p className="text-lg mt-4">Загрузка...</p>
-      </div>
+          <ClipLoader size={100} color="#3498db" loading={loading} />
+          <p className="text-lg mt-4">Загрузка...</p>
+        </div>
+        <Footer />
+      </>
     );
   }
   if (error) {
@@ -45,7 +49,7 @@ const ArticlePage = () => {
   return (
     <>
       <Header />
-      <div className="px-10 text-black my-10">
+      <div className="px-10 text-black my-10 font-sf">
         <div
           className="article-container flex flex-col"
           dangerouslySetInnerHTML={{ __html: article }}
