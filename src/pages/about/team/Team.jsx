@@ -12,22 +12,22 @@ import sezimtal from './pics/sezimtal.svg'
 
 const Team = () => {
   return (
-    <div className="px-10 flex flex-col">
-      <h2 className="font-unbounded font-medium md:text-4xl xl:text-[42px] text-[#303030]">
+    <div className="px-4 md:px-10 flex flex-col">
+      <h2 className="font-unbounded font-medium text-3xl md:text-4xl xl:text-[42px] text-[#303030]">
         НАША КОМАНДА
       </h2>
-      <div className="flex justify-between w-full mt-9 mb-10">
+      <div className="flex flex-col gap-3 md:flex-row justify-between w-full mt-9 mb-10">
         <span className="text-base font-unbounded md:max-w-[45%] lg:max-w-[36%]">
           КОМАНДА JASH STORY ОБЪЕДИНЕНА <span className="text-[#CC67F8]">ЛЮБОВЬЮ К ИСТОРИИ</span>
         </span>
-        <span className="font-sfpro font-normal text-[#343434] md:text-sm xl:text-lg md:max-w-[45%] lg:max-w-[34%]">
+        <span className="font-sfpro font-normal text-[#343434] text-sm xl:text-lg md:max-w-[45%] lg:max-w-[34%]">
           На нашем сайте представлены эксклюзивные ресурсы, которые не только
           помогают в подготовке, но и вдохновляют на изучение истории. Мы
           стремимся сделать обучение простым и увлекательным, предоставляя все
           необходимые инструменты для достижения успеха.
         </span>
       </div>
-      <div className="grid md:grid-cols-4 xl:grid-cols-5 grid-rows-2 gap-10 text-sm lg:text-sm xl:text-lg">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-rows-2 gap-10 text-sm lg:text-sm xl:text-lg">
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={daniel}/>
           <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Daniel Satybaldiev</button>
