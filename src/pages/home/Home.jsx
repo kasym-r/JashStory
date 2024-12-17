@@ -18,7 +18,7 @@ const Home = () => {
       <Resources />
       <Articles />
       <OlympiadHistory />
-      <BestArticles />
+      {/* <BestArticles /> */}
       <Footer />
     </>
   );

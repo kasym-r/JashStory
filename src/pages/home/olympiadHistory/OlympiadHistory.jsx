@@ -15,7 +15,7 @@ const OlympiadHistory = () => {
         transform ${inView ? 'opacity-100' : 'opacity-0'}`}
         >
             <h2 className='font-unbounded font-medium text-5xl'>Олимпиадная История</h2>
-            <p className='mt-2 font-sf font-normal text-base '>Здесь вы найдете увлекательные тесты по мировой и отечественной истории, статьи углубленного уровня и множество других полезных <br /> материалов для успешной подготовки к олимпиадам и разным тестам, а также для глубокого изучения исторических событий.</p>
+            <p className='mt-2 font-sf font-normal md:text-[15px] xl:text-base text-center'>Здесь вы найдете увлекательные тесты по мировой и отечественной истории, статьи углубленного уровня и множество других полезных <br /> материалов для успешной подготовки к олимпиадам и разным тестам, а также для глубокого изучения исторических событий.</p>
             <button className="mt-10 font-sf w-[200px] md:w-[234px] font-medium md:text-xl text-white px-[15px] py-[8px] border-white border-2 rounded-[24px]">Все статьи</button>
         </div>
     </div>

@@ -7,9 +7,9 @@ const Project = () => {
       <div>
         <img src={img} className="w-full rounded-3xl" />
       </div>
-      <div className="grid grid-cols-1 gap-8">
-        <h2 className="font-unbounded text-5xl font-medium">О ПРОЕКТЕ</h2>
-        <p className="text-[#4A4A4A] text-lg">
+      <div className="grid grid-cols-1 md:gap-3 xl:gap-8">
+        <h2 className="font-unbounded md:text-4xl xl:text-5xl font-medium">О ПРОЕКТЕ</h2>
+        <p className="text-[#4A4A4A] md:text-sm xl:text-lg">
           Jash Story — это образовательный проект, который объединяет изучение
           истории Кыргызстана и мировой истории. Мы организуем школьные
           олимпиады, разрабатываем материалы для подготовки и предоставляем

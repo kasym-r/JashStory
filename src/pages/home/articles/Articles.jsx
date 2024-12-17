@@ -22,21 +22,12 @@ const Articles = () => {
     fetchData();
   }, []);
 
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-      })
-
-      const handleArticleClick = () => {
-        navigate("/article/:id");
-      };
-
   return (
     <div className="bg-GrayBg p-10 flex flex-col">
       <h2 className="text-white font-unbounded font-medium text-5xl mb-10">
         СТАТЬИ
       </h2>
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-11">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 xl:grid-cols-3 lg:gap-11">
         {cards.map((card) => (
           <Card
             id={card.id}

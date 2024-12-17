@@ -8,7 +8,7 @@ const Footer = () => {
   return (
       <footer className={styles.footer}>
         <p className={styles.contact}>CONTACT</p>
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-center md:gap-36 xl:justify-between items-center">
           
           <div className="mb-8 md:mb-0">
             <h3 className="flex items-center gap-1 text-lg font-bold">
@@ -17,13 +17,13 @@ const Footer = () => {
               </h3>
             <p className="mt-2">Свяжитесь с нами любым <br /> удобным способом</p>
             <div className={`${styles.iconContainer} flex mt-4`}>
-              <a href="https://instagram.com" className={styles.icon}>
+              <a href="https://www.instagram.com/jash_story_/" className={styles.icon}>
                 <i className={`fab fa-instagram ${styles.instagram}`}></i>
               </a>
-              <a href="https://whatsapp.com" className={styles.icon}>
+              <a href="https://wa.me/996220140041" className={styles.icon}>
                 <i className={`fab fa-whatsapp ${styles.whatsapp}`}></i>
               </a>
-              <a href="https://telegram.com" className={styles.icon}>
+              <a href="https://t.me/+6SGu9MxHxEYyNWRi?fbclid=PAZXh0bgNhZW0CMTEAAaaiYoZoNbsGPUni-Lqbt0w863PVzj7mUk3Wpz5uFDexhitIjPQNUhWs2Vc_aem_QUSPRQmxf49YgddfDFQ2ig" className={styles.icon}>
                 <i className={`fab fa-telegram ${styles.telegram}`}></i>
               </a>
             </div>

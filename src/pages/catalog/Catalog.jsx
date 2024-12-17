@@ -69,7 +69,7 @@ const Catalog = () => {
           )}
         </div> */}
       </div>
-      <div className="m-10 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-11">
+      <div className="m-10 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 xl:grid-cols-3 lg:gap-11">
       {filteredCards.map((card) => (
           <Card
             id={card.id}
