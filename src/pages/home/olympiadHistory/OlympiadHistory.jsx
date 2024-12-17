@@ -1,25 +1,35 @@
-import React from 'react'
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const OlympiadHistory = () => {
-
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-      });
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
 
   return (
-    <div className='flex flex-col items-center justify-center bg-olymp-bg bg-cover bg-center h-[500px] text-white'>
-        <div ref={ref} className={`flex flex-col items-center 
+    <div className="flex flex-col px-10 items-center justify-center bg-olymp-bg bg-cover bg-center h-[500px] text-white">
+      <div
+        ref={ref}
+        className={`flex flex-col items-center
         transition-opacity duration-700 ease-in-out 
-        transform ${inView ? 'opacity-100' : 'opacity-0'}`}
-        >
-            <h2 className='font-unbounded font-medium text-5xl'>Олимпиадная История</h2>
-            <p className='mt-2 font-sf font-normal md:text-[15px] xl:text-base text-center'>Здесь вы найдете увлекательные тесты по мировой и отечественной истории, статьи углубленного уровня и множество других полезных <br /> материалов для успешной подготовки к олимпиадам и разным тестам, а также для глубокого изучения исторических событий.</p>
-            <button className="mt-10 font-sf w-[200px] md:w-[234px] font-medium md:text-xl text-white px-[15px] py-[8px] border-white border-2 rounded-[24px]">Все статьи</button>
-        </div>
+        transform ${inView ? "opacity-100" : "opacity-0"}`}
+      >
+        <h2 className="font-unbounded font-medium md:text-4xl xl:text-5xl">
+          Олимпиадная История
+        </h2>
+        <p className="mt-2 font-sf font-light md:text-[15px] xl:text-base lg:font-normal text-center">
+          Здесь вы найдете увлекательные тесты по мировой и отечественной
+          истории, статьи углубленного уровня и множество других полезных <br />
+          материалов для успешной подготовки к олимпиадам и разным тестам, а
+          также для глубокого изучения исторических событий.
+        </p>
+        <button className="mt-10 font-sf w-[200px] md:w-[234px] font-medium md:text-xl text-white px-[15px] py-[8px] border-white border-2 rounded-[24px]">
+          Все статьи
+        </button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default OlympiadHistory
+export default OlympiadHistory;

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
       <footer className={styles.footer}>
         <p className={styles.contact}>CONTACT</p>
-        <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-center md:gap-36 xl:justify-between items-center">
+        <div className="container mx-auto px-5 flex flex-col md:flex-row justify-center md:gap-24 lg:gap-28 xl:justify-between items-center">
           
           <div className="mb-8 md:mb-0">
             <h3 className="flex items-center gap-1 text-lg font-bold">

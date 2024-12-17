@@ -7,18 +7,18 @@ const PrevOlympiads = () => {
       <h1 className="font-unbounded font-medium md:text-4xl xl:text-5xl text-[#303030] text-center">
         ПРОВЕДЕННЫЕ ОЛИМПИАДЫ
       </h1>
-      <span className="flex max-w-[40%] text-[#343434] font-sfpro md:text-sm xl:text-lg my-12">
+      <span className="flex lg:max-w-[40%] text-[#343434] font-sfpro lg:text-sm xl:text-lg my-12">
         Наш проект не только делиться статьями, ресурсами и разными материалами,
         но также мы проводим специально для школьников по несколько раз в год
         Олимпиады по истории с отличными призами, для закрепления их знаний и
         мотивации продолжать дальше изучать историю
       </span>
-      <div className="bg-white flex items-center rounded-3xl md:gap-6 xl:gap-9 p-12 shadow-2xl">
+      <div className="bg-white flex flex-col xl:flex-row items-center rounded-3xl md:gap-6 xl:gap-9 p-12 shadow-2xl">
         <div className="">
           <img className="rounded-3xl" src={prevolymp}/>
         </div>
-        <div className="max-w-[50%]">
-          <span className="text-[#343434] font-sfpro md:text-sm xl:text-base">
+        <div className="xl:max-w-[50%]">
+          <span className="text-[#343434] font-sfpro lg:text-sm xl:text-base">
             Наш проект не только публикует материалы по истории, но и активно
             организует олимпиады для школьников. Эти мероприятия помогают
             участникам закрепить свои знания, подготовиться к республиканским

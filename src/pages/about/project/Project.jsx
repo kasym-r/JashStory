@@ -3,13 +3,10 @@ import img from "../../../assets/photoofall.svg";
 
 const Project = () => {
   return (
-    <div className="grid grid-cols-2 items-center gap-10 py-20 px-10">
-      <div>
-        <img src={img} className="w-full rounded-3xl" />
-      </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 my-10 px-10">
       <div className="grid grid-cols-1 md:gap-3 xl:gap-8">
         <h2 className="font-unbounded md:text-4xl xl:text-5xl font-medium">О ПРОЕКТЕ</h2>
-        <p className="text-[#4A4A4A] md:text-sm xl:text-lg">
+        <p className="text-[#4A4A4A] lg:text-sm xl:text-lg">
           Jash Story — это образовательный проект, который объединяет изучение
           истории Кыргызстана и мировой истории. Мы организуем школьные
           олимпиады, разрабатываем материалы для подготовки и предоставляем
@@ -24,6 +21,9 @@ const Project = () => {
           Jash Story предлагает уникальные и полезные материалы, доступные для всех,
           кто хочет углубить свои знания и лучше понять историю.
         </p>
+      </div>
+      <div>
+        <img src={img} className="w-full rounded-3xl" />
       </div>
     </div>
   );

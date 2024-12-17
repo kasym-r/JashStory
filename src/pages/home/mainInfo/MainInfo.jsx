@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import style from "./MainInfo.module.scss";
+import style from "./MainInfo.module.css";
 import { useInView } from "react-intersection-observer";
 
 const MainInfo = () => {
@@ -17,7 +17,7 @@ const MainInfo = () => {
   return (
     <div className={style.mainDiv}>
       <div className="my-auto flex flex-col gap-[20px] md:gap-[40px] justify-center items-center px-4 md:px-0">
-        <p className="text-[32px] md:text-[52px] text-white font-medium text-center w-[90%] md:w-[70%] font-unbounded">
+        <p className="md:text-[50px] text-white font-medium text-center w-[90%] md:w-[70%] font-unbounded">
           Народ не знающий свою историю лишает себя корней
         </p>
 
