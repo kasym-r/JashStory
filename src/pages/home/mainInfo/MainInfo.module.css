@@ -1,6 +1,7 @@
 .mainDiv{
     background-image: url('/src/assets/mainBg.svg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
     @apply flex flex-col items-center m-4 md:m-10 rounded-[20px];
 }
