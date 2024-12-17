@@ -18,7 +18,7 @@ const PrevOlympiads = () => {
           <img className="rounded-3xl" src={prevolymp}/>
         </div>
         <div className="xl:max-w-[50%]">
-          <span className="text-[#343434] font-sfpro lg:text-sm xl:text-base">
+          <span className="text-[#343434] font-sfpro lg:text-sm xl:text-lg">
             Наш проект не только публикует материалы по истории, но и активно
             организует олимпиады для школьников. Эти мероприятия помогают
             участникам закрепить свои знания, подготовиться к республиканским

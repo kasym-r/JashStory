@@ -49,7 +49,7 @@ const ArticlePage = () => {
   return (
     <>
       <Header />
-      <div className="px-10 text-black my-10 font-sf">
+      <div className="md:text-lg px-4 md:px-10 text-black my-10 font-sf">
         <div
           className="article-container flex flex-col"
           dangerouslySetInnerHTML={{ __html: article }}

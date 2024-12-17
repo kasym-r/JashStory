@@ -27,7 +27,7 @@ const Team = () => {
           необходимые инструменты для достижения успеха.
         </span>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-rows-2 gap-10 text-sm lg:text-sm xl:text-lg">
+      <div className="grid mx-auto grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 text-sm lg:text-sm xl:text-lg">
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={daniel}/>
           <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Daniel Satybaldiev</button>

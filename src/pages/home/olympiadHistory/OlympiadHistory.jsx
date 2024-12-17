@@ -15,7 +15,7 @@ const OlympiadHistory = () => {
         transition-opacity duration-700 ease-in-out 
         transform ${inView ? "opacity-100" : "opacity-0"}`}
       >
-        <h2 className="font-unbounded font-medium text-2xl md:text-4xl xl:text-5xl">
+        <h2 className="font-unbounded font-medium text-center text-xl md:text-4xl xl:text-5xl">
           Олимпиадная История
         </h2>
         <p className="mt-2 font-sf font-light text-[15px] xl:text-base lg:font-normal text-center">
