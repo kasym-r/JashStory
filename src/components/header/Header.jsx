@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between my-[40px] px-[40px] gap-36">
+    <header className="flex justify-between my-7 md:my-10 px-4 md:px-10 gap-36">
       <a href='/' className="flex items-center gap-1 font-unbounded text-[24px] font-bold">
         <img src={logoblack}/>
         <span className='hidden sm:inline'>Jash Story</span>

@@ -19,9 +19,9 @@ const Resources = () => {
 
   return (
     <div className="bg-GrayBg py-10">
-      <div className="grid lg:grid-cols-2 gap-10 mx-10">
+      <div className="grid lg:grid-cols-2 gap-10 mx-4 md:mx-10">
         <div className="flex flex-col justify-center">
-          <p className="font-unbounded text-xl md:text-4xl xl:text-5xl font-medium text-white leading-tight">
+          <p className="font-unbounded text-3xl md:text-4xl xl:text-5xl font-medium text-white leading-tight">
             ПОЛНЫЕ РЕСУРСЫ <br /> ДЛЯ <span className="text-[#CC67F8]">ПОБЕДЫ</span> В <span className="text-[#CC67F8]">ОЛИМПИАДАХ</span>
           </p>
         </div>

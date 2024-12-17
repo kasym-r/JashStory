@@ -8,17 +8,17 @@ const OlympiadHistory = () => {
   });
 
   return (
-    <div className="flex flex-col px-10 items-center justify-center bg-olymp-bg bg-cover bg-center h-[500px] text-white">
+    <div className="flex flex-col px-5 md:px-10 items-center justify-center bg-olymp-bg bg-cover bg-center h-[400px] md:h-[500px] text-white">
       <div
         ref={ref}
         className={`flex flex-col items-center
         transition-opacity duration-700 ease-in-out 
         transform ${inView ? "opacity-100" : "opacity-0"}`}
       >
-        <h2 className="font-unbounded font-medium md:text-4xl xl:text-5xl">
+        <h2 className="font-unbounded font-medium text-2xl md:text-4xl xl:text-5xl">
           Олимпиадная История
         </h2>
-        <p className="mt-2 font-sf font-light md:text-[15px] xl:text-base lg:font-normal text-center">
+        <p className="mt-2 font-sf font-light text-[15px] xl:text-base lg:font-normal text-center">
           Здесь вы найдете увлекательные тесты по мировой и отечественной
           истории, статьи углубленного уровня и множество других полезных <br />
           материалов для успешной подготовки к олимпиадам и разным тестам, а

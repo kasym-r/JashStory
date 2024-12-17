@@ -23,11 +23,11 @@ const Articles = () => {
   }, []);
 
   return (
-    <div className="bg-GrayBg p-10 flex flex-col">
-      <h2 className="text-white font-unbounded font-medium text-5xl mb-10">
+    <div className="bg-GrayBg p-4 md:p-10 flex flex-col">
+      <h2 className="text-white font-unbounded font-medium text-4xl md:text-5xl mb-10">
         СТАТЬИ
       </h2>
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5 xl:grid-cols-3 lg:gap-11">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 lg:gap-11">
         {cards.map((card) => (
           <Card
             id={card.id}

@@ -16,8 +16,8 @@ const MainInfo = () => {
 
   return (
     <div className={style.mainDiv}>
-      <div className="my-auto flex flex-col gap-[20px] md:gap-[40px] justify-center items-center px-4 md:px-0">
-        <p className="md:text-[50px] text-white font-medium text-center w-[90%] md:w-[70%] font-unbounded">
+      <div className="my-auto flex flex-col gap-6 md:gap-[40px] justify-center items-center px-4 md:px-0 py-32 md:h-screen">
+        <p className="text-3xl md:text-[50px] text-white font-medium text-center w-[90%] md:w-[70%] font-unbounded">
           Народ не знающий свою историю лишает себя корней
         </p>
 
