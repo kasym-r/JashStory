@@ -5,10 +5,12 @@ import About from "./pages/about/About";
 import Login from "./pages/login/Login";
 import Registration from "./pages/registration/Registration";
 import ArticlePage from "./pages/article/ArticlePage";
+import ScrollToTop from "./scrolltotop/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />

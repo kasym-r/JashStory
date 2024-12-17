@@ -34,7 +34,6 @@ const Footer = () => {
             <p className="mt-2">+996 220 140 041</p>
             <p className="mt-2">jash_story@gmail.com</p>
             <p className="mt-2">г. Бишкек</p>
-            <p className="mt-2">Работаем с 8:00–21:00</p>
           </div>
 
           <div>
@@ -53,11 +52,6 @@ const Footer = () => {
               <li>
                 <a href="/reviews" className="hover:underline">
                   Отзывы
-                </a>
-              </li>
-              <li>
-                <a href="/team" className="hover:underline">
-                  Команда
                 </a>
               </li>
             </ul>
