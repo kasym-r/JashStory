@@ -5,7 +5,9 @@ import logowhite from "../../assets/logowhite.svg";
 
 const Footer = () => {
   return (
-    <footer className={`flex flex-col items-center md:pt-[140px] md:h-[450px] ${styles.footer}`}>
+    <footer
+      className={`flex flex-col items-center md:pt-[140px] md:h-[450px] ${styles.footer}`}
+    >
       <p className={`hidden md:block ${styles.contact}`}>CONTACT</p>
       <div className="container mx-auto px-4 md:px-5 flex flex-col gap-5 md:flex-row justify-center md:gap-24 lg:gap-28 xl:justify-between items-center">
         <div className="flex flex-col items-center">
@@ -20,15 +22,21 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/jash_story_/"
               className={styles.icon}
+              target="_blank"
             >
               <i className={`fab fa-instagram ${styles.instagram}`}></i>
             </a>
-            <a href="https://wa.me/996220140041" className={styles.icon}>
+            <a
+              href="https://wa.me/996220140041"
+              className={styles.icon}
+              target="_blank"
+            >
               <i className={`fab fa-whatsapp ${styles.whatsapp}`}></i>
             </a>
             <a
               href="https://t.me/+6SGu9MxHxEYyNWRi?fbclid=PAZXh0bgNhZW0CMTEAAaaiYoZoNbsGPUni-Lqbt0w863PVzj7mUk3Wpz5uFDexhitIjPQNUhWs2Vc_aem_QUSPRQmxf49YgddfDFQ2ig"
               className={styles.icon}
+              target="_blank"
             >
               <i className={`fab fa-telegram ${styles.telegram}`}></i>
             </a>

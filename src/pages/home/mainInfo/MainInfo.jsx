@@ -3,11 +3,6 @@ import style from "./MainInfo.module.css";
 import { useInView } from "react-intersection-observer";
 
 const MainInfo = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1
-  });
-
   const navigate = useNavigate();
   
   const handleCatalogClick = () => {
