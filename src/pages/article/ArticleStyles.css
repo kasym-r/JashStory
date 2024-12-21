@@ -10,11 +10,17 @@
     height: auto;
 }
 
-.article-container p img + p,
-.article-container p > strong {
+.article-container p strong
+{
     text-align: center;
     display: block;
-    
+}
+
+.article-container p b {
+    font-size: 27px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
 }
 
 .article-container p:nth-child(1) {

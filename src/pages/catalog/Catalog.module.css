@@ -1,6 +1,7 @@
 .mainDiv{
     background-image: url('/src/assets/Catalog-bg.svg');
     background-repeat: no-repeat;
-    background-size:cover;
-    @apply flex justify-center items-center m-4 md:m-10 rounded-[20px] h-[288px];
+    background-size: cover;
+    @apply flex justify-center items-center mx-4 md:mx-10 rounded-[20px] h-[300px];
 }
+

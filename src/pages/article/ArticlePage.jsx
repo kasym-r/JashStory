@@ -33,7 +33,7 @@ const ArticlePage = () => {
       <>
         <Header />
         <div className="flex justify-center items-center min-h-screen flex-col">
-          <ClipLoader size={100} color="#3498db" loading={loading} />
+          <ClipLoader size={100} color="#00000" loading={loading} />
           <p className="text-lg mt-4">Загрузка...</p>
         </div>
         <Footer />
