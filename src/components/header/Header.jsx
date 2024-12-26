@@ -1,33 +1,49 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import logoblack from '../../assets/logoblack.svg'
+import logoblack from '../../assets/logoblack.svg';
+import { useLanguage } from '../../context/LanguageContext'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   const navigate = useNavigate();
-  
+
   const handleAboutClick = () => {
     navigate("/about");
   };
 
   const handleLoginClick = () => {
-    navigate("/login")
-  }
+    navigate("/login");
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLanguageChange = (event) => {
+    setLanguage(event.target.value);
+  };
+
   return (
-    <header className="flex justify-between my-7 md:my-10 px-4 md:px-10 gap-36">
-      <a href='/' className="flex items-center gap-1 font-unbounded text-[24px] font-bold">
-        <img src={logoblack}/>
-        <span className='hidden sm:inline'>Jash Story</span>
+    <header className="flex justify-between my-7 md:my-10 px-4 md:px-10 gap-20 items-center">
+      <a href="/" className="flex items-center gap-1 font-unbounded text-[24px] font-bold">
+        <img src={logoblack} alt="Logo" />
+        <span className="hidden sm:inline">Jash Story</span>
       </a>
 
-      {/* Burger Menu Button for Mobile */}
-      <div className="xl:hidden">
+      <div className="flex items-center xl:hidden space-x-4">
+        {/* Language Dropdown */}
+        <select
+          value={language}
+          onChange={handleLanguageChange}
+          className="text-[#333335] bg-white border border-gray-300 rounded-[45px] px-4 py-1 text-lg focus:outline-none hover:cursor-pointer"
+        >
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
+
+        {/* Burger Menu Button */}
         <button onClick={toggleMenu} className="text-3xl">
           {isMenuOpen ? '✕' : '☰'}
         </button>
@@ -42,10 +58,11 @@ const Header = () => {
         </ul>
       </nav>
 
+      {/* Mobile Dropdown Menu */}
       <div
         className={`${
           isMenuOpen ? 'max-h-[300px]' : 'max-h-0'
-        } overflow-hidden transition-all duration-500 ease-in-out absolute top-[80px] left-0 w-full  bg-[#E5E5E5] xl:hidden`}
+        } overflow-hidden transition-all duration-500 ease-in-out absolute top-[80px] left-0 w-full bg-[#E5E5E5] xl:hidden`}
       >
         <ul className="flex flex-col items-center gap-4 py-4">
           <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>
@@ -54,19 +71,26 @@ const Header = () => {
           <li onClick={handleAboutClick} className="hover:text-[20px] transition-all duration-300 ease-in-out">О нас</li>
         </ul>
       </div>
-      {/* {isMenuOpen && (
-        <nav className="absolute top-[80px] left-0 w-full bg-white lg:hidden">
-          <ul className="flex flex-col items-center gap-4 py-4">
-            <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>
-            <li className="hover:text-[20px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
-            <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
-            <li className="hover:text-[20px] transition-all duration-300 ease-in-out">О нас</li>
-          </ul>
-        </nav>
-      )} */}
 
-      {/* Login Button */}
-      <button onClick={handleLoginClick} className="hidden xl:block text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover:cursor-pointer hover:opacity-90 transition-all duration-300 ease-in-out">Войти</button>
+      <div className="hidden xl:flex items-center space-x-4">
+        {/* Language Dropdown */}
+        <select
+          value={language}
+          onChange={handleLanguageChange}
+          className="text-[#333335] bg-white border border-gray-300 rounded-[45px] px-4 py-1 text-lg focus:outline-none hover:cursor-pointer"
+        >
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
+
+        {/* Login Button */}
+        <button
+          onClick={handleLoginClick}
+          className="text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover:cursor-pointer hover:opacity-90 transition-all duration-300 ease-in-out"
+        >
+          Войти
+        </button>
+      </div>
     </header>
   );
 };
