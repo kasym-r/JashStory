@@ -51,10 +51,22 @@ const Header = () => {
 
       <nav aria-label="Main Navigation" className="hidden xl:flex font-sf">
         <ul className="flex items-center gap-12 md:gap-8 hover:cursor-pointer text-[#393939] font-light">
-          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">Мировая история</li>
-          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
-          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
-          <li onClick={handleAboutClick} className="hover:text-[18px] transition-all duration-300 ease-in-out">О нас</li>
+          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "World History" : "Мировая История"}
+            
+          </li>
+          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "History of Kyrgyzstan" : "История Кыргызстана"}
+            
+          </li>
+          <li className="hover:text-[18px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "Olympiad History" : "Олимпиадная История"}
+            
+          </li>
+          <li onClick={handleAboutClick} className="hover:text-[18px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "About Us" : "О нас"}
+
+          </li>
         </ul>
       </nav>
 
@@ -65,10 +77,22 @@ const Header = () => {
         } overflow-hidden transition-all duration-500 ease-in-out absolute top-[80px] left-0 w-full bg-[#E5E5E5] xl:hidden`}
       >
         <ul className="flex flex-col items-center gap-4 py-4">
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Мировая история</li>
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">История Кыргызстана</li>
-          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">Олимпиадная история</li>
-          <li onClick={handleAboutClick} className="hover:text-[20px] transition-all duration-300 ease-in-out">О нас</li>
+          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "World History" : "Мировая История"}
+            
+          </li>
+          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "History of Kyrgyzstan" : "История Кыргызстана"}
+            
+          </li>
+          <li className="hover:text-[20px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "Olympiad History" : "Олимпиадная История"}
+            
+          </li>
+          <li onClick={handleAboutClick} className="hover:text-[20px] transition-all duration-300 ease-in-out">
+          {language === "en" ? "About Us" : "О нас"}
+            
+          </li>
         </ul>
       </div>
 
@@ -85,10 +109,11 @@ const Header = () => {
 
         {/* Login Button */}
         <button
-          onClick={handleLoginClick}
+          // onClick={handleLoginClick}
           className="text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover:cursor-pointer hover:opacity-90 transition-all duration-300 ease-in-out"
         >
-          Войти
+          {language === "en" ? "Sign in" : "Войти"}
+          
         </button>
       </div>
     </header>
