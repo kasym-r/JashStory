@@ -4,9 +4,11 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { ClipLoader } from "react-spinners";
 import "./ArticleStyles.css";
+import { useLanguage } from "../../context/LanguageContext";
 
 const ArticlePage = () => {
   const { id } = useParams();
+  const { language } = useLanguage();
   const [articleData, setArticleData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -14,19 +16,26 @@ const ArticlePage = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await fetch(`https://jashstory.pp.ua/api/post/${id}`);
+        setLoading(true);
+        const response = await fetch(
+          `https://jashstory.pp.ua/api/post/${id}?language=${language}`
+        );
         const data = await response.json();
         setArticleData(data);
-        setLoading(false);
       } catch (err) {
-        console.error("Ошибка загрузки статьи:", err);
-        setError("Не удалось загрузить статью");
+        console.error("Error loading article:", err);
+        setError(
+          language === "en" 
+            ? "Failed to load the article" 
+            : "Не удалось загрузить статью"
+        );
+      } finally {
         setLoading(false);
       }
     };
 
     fetchArticle();
-  }, [id]);
+  }, [id, language]);
 
   if (loading) {
     return (
@@ -34,17 +43,28 @@ const ArticlePage = () => {
         <Header />
         <div className="flex justify-center items-center min-h-screen flex-col">
           <ClipLoader size={100} color="#00000" loading={loading} />
-          <p className="text-lg mt-4">Загрузка...</p>
+          <p className="text-lg mt-4">
+            {language === "en" ? "Loading..." : "Загрузка..."}
+          </p>
         </div>
         <Footer />
       </>
     );
   }
+
   if (error) {
-    return <p className="text-center text-lg text-red-500">{error}</p>;
+    return (
+      <>
+        <Header />
+        <div className="flex justify-center items-center min-h-screen">
+          <p className="text-center text-lg text-red-500">{error}</p>
+        </div>
+        <Footer />
+      </>
+    );
   }
 
-  const { article } = articleData;
+  const { article } = articleData || {};
 
   return (
     <>
@@ -53,7 +73,7 @@ const ArticlePage = () => {
         <div
           className="article-container flex flex-col"
           dangerouslySetInnerHTML={{ __html: article }}
-        ></div>
+        />
       </div>
       <Footer />
     </>

@@ -5,7 +5,6 @@ import { useLanguage } from "../../../context/LanguageContext";
 
 const Articles = () => {
   const { language } = useLanguage()
-
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -28,7 +27,7 @@ const Articles = () => {
         {language === "en" ? "ARTICLES" : "СТАТЬИ"}
       </h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 lg:gap-11">
-        {cards.map((card) => (
+        {cards.slice(0, 6).map((card) => (
           <Card
             id={card.id}
             key={card.id}

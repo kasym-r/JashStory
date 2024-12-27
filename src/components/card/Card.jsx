@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import { useLanguage } from "../../context/LanguageContext";
 
-const Card = ({ id, img, text, price, bgColor = "bg-white" }) => {
+const Card = ({ id, img, text, bgColor = "bg-white" }) => {
   const navigate = useNavigate();
+  const { language } = useLanguage()
 
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -10,7 +12,7 @@ const Card = ({ id, img, text, price, bgColor = "bg-white" }) => {
   });
 
   const handleArticleClick = () => {
-    navigate(`/article/${id}`);
+    navigate(`/${language}/article/${id}`);
   };
 
   return (
@@ -28,7 +30,7 @@ const Card = ({ id, img, text, price, bgColor = "bg-white" }) => {
           onClick={handleArticleClick}
           className="bg-[#434343] text-white w-[180px] rounded-[24px] hover:opacity-90 transition-all duration-300 ease-in-out"
         >
-          Читать
+          {language === "en" ? "Read" : "Читать"}
         </button>
       </div>
     </div>

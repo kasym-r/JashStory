@@ -6,7 +6,6 @@ import Login from "./pages/login/Login";
 import Registration from "./pages/registration/Registration";
 import ArticlePage from "./pages/article/ArticlePage";
 import ScrollToTop from "./scrolltotop/ScrollToTop";
-import PrevOlympiads from "./pages/about/prevOlympiads/PrevOlympiads";
 
 const App = () => {
   return (
@@ -18,7 +17,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
-        <Route path="/article/:id" element={<ArticlePage />} />
+        <Route path="/:lang/article/:id" element={<ArticlePage />} />
       </Routes>
     </Router>
   );
