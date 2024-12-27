@@ -9,7 +9,8 @@ export default {
         sf: ["SF UI Display", 'sans-serif'],
         sfpro: ["SF Pro Display", 'sans-serif'],
         helvetica: ["Helvetica Neue LT Pro", 'sans-serif'],
-        unbounded: ["Unbounded", 'sans-serif']
+        unbounded: ["Unbounded", 'sans-serif'],
+        raleway: ["Raleway", 'sans-serif']
       },
       colors: {
         GrayBg: '#393939'

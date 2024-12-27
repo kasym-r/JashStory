@@ -5,6 +5,7 @@ import Card from "../../components/card/Card";
 import Footer from "../../components/footer/Footer";
 import search from "../../assets/searchIcon.svg";
 import { ClipLoader } from "react-spinners"
+import { useLanguage } from "../../context/LanguageContext";
 
 const Catalog = () => {
   const [cards, setCards] = useState([]);
@@ -13,6 +14,7 @@ const Catalog = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(6);
+  const { language } = useLanguage()
 
   const toggleAccordion = () => setAccordionOpen(!isAccordionOpen);
 
@@ -48,13 +50,16 @@ const Catalog = () => {
         <div className={style.mainDiv}>
         <div className="my-auto flex flex-col gap-[20px] md:gap-[40px] justify-center items-center px-4 md:px-0">
           <p className="text-3xl md:text-[50px] font-unbounded font-bold text-white text-center w-[90%] md:w-[70%]">
-            Каталог
+            {language === "en" ? "Catalog" : "Каталог"}
           </p>
         </div>
       </div>
         <div className="flex justify-center items-center min-h-screen flex-col">
           <ClipLoader size={100} color="#00000" loading={loading} />
-          <p className="text-lg mt-4">Загрузка...</p>
+          <p className="text-lg mt-4">
+          {language === "en" ? "Loading..." : "Загрузка..."}
+
+          </p>
         </div>
         <Footer />
       </>
@@ -70,7 +75,7 @@ const Catalog = () => {
       <div className={style.mainDiv}>
         <div className="my-auto flex flex-col gap-[20px] md:gap-[40px] justify-center items-center px-4 md:px-0">
           <p className="text-3xl md:text-[50px] font-unbounded font-bold text-white text-center w-[90%] md:w-[70%]">
-            Каталог
+          {language === "en" ? "Catalog" : "Каталог"}
           </p>
         </div>
       </div>
@@ -120,7 +125,7 @@ const Catalog = () => {
             onClick={showMoreCards}
             className="rounded-[29px] text-white text-[22px] font-medium bg-[#333335] px-[27px] py-[4px] hover:opacity-90 transition-all duration-300 ease-in-out"
           >
-            Показать больше
+            {language === "en" ? "Show more" : "Показать больше"}
           </button>
         </div>
       )}

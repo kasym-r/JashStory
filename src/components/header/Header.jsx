@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logoblack from '../../assets/logoblack.svg';
 import { useLanguage } from '../../context/LanguageContext'
@@ -6,6 +6,12 @@ import { useLanguage } from '../../context/LanguageContext'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage) {
+      setLanguage(storedLanguage);
+    }
+  }, [setLanguage]);
 
   const navigate = useNavigate();
 
@@ -22,9 +28,10 @@ const Header = () => {
   };
 
   const handleLanguageChange = (event) => {
-    setLanguage(event.target.value);
+    const newLanguage = event.target.value;
+    setLanguage(newLanguage);
+    localStorage.setItem('language', newLanguage);
   };
-
   return (
     <header className="flex justify-between my-7 md:my-10 px-4 md:px-10 gap-20 items-center">
       <a href="/" className="flex items-center gap-1 font-unbounded text-[24px] font-bold">
