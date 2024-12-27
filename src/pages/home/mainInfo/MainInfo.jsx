@@ -13,7 +13,7 @@ const MainInfo = () => {
   return (
     <div className={style.mainDiv}>
       <div className="my-auto flex flex-col gap-6 md:gap-[40px] justify-center items-center px-4 md:px-0 py-32 md:h-screen">
-        <p className="text-3xl md:text-[50px] text-white font-medium text-center w-[90%] md:w-[70%] font-unbounded">
+        <p className="text-3xl md:text-[50px] text-white font-medium text-center w-[90%] md:w-[70%] font-unbounded leading-tight">
           {language === 'en' ? 'A nation that does not know its history deprives itself of its roots' : 'Народ не знающий свою историю лишает себя корней'}
         </p>
 

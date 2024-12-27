@@ -2,8 +2,11 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import logowhite from "../../assets/logowhite.svg";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Footer = () => {
+  const { language } = useLanguage();
+
   return (
     <footer
       className={`flex flex-col items-center md:pt-[140px] md:h-[450px] ${styles.footer}`}
@@ -16,7 +19,18 @@ const Footer = () => {
             Jash Story
           </h3>
           <p className="mt-2">
-            Свяжитесь с нами любым <br /> удобным способом
+            {language === "en" ? (
+              <>
+                Contact us in any <br />
+                convenient way
+              </>
+            ) : (
+              <>
+                Свяжитесь с нами любым
+                <br />
+                удобным способом
+              </>
+            )}
           </p>
           <div className={`${styles.iconContainer} flex mt-4`}>
             <a
@@ -44,28 +58,34 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="text-lg font-bold">Контакты</h3>
+          <h3 className="text-lg font-bold">
+            {language === "en" ? "Contacts" : "Контакты"}
+          </h3>
           <p className="mt-2">+996 220 140 041</p>
           <p className="mt-2">jash_story@gmail.com</p>
-          <p className="mt-2">г. Бишкек</p>
+          <p className="mt-2">
+            {language === "en" ? "Bishkek city" : "г. Бишкек"}
+          </p>
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="text-lg font-bold">Для клиентов</h3>
+          <h3 className="text-lg font-bold">
+            {language === "en" ? "For clients" : "Для клиентов"}
+          </h3>
           <ul className="mt-2 space-y-2 text-center">
             <li>
               <a href="/about" className="hover:underline">
-                О нас
+                {language === "en" ? "About Us" : "О нас"}
               </a>
             </li>
             <li>
               <a href="/olympiads" className="hover:underline">
-                Олимпиады
+                {language === "en" ? "Olympiads" : "Олимпиады"}
               </a>
             </li>
             <li>
               <a href="/reviews" className="hover:underline">
-                Отзывы
+                {language === "en" ? "Reviews" : "Отзывы"}
               </a>
             </li>
           </ul>

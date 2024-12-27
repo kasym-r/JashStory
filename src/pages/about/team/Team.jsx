@@ -30,52 +30,52 @@ const Team = () => {
       <div className="grid mx-auto grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 text-sm lg:text-sm xl:text-lg">
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={daniel}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Daniel Satybaldiev</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Daniel Satybaldiev</span>
           <span className="font-sfpro">Founder & CEO</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={isadora}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Isadora Chokmorova</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Isadora Chokmorova</span>
           <span className="font-sfpro">Co-founder & Designer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={kasym}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Kasym Rakhmatyllo</span>
           <span className="font-sfpro">Frontend & Team Lead</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={amaliya}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Amaliya Yryskeldieva</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Amaliya Yryskeldieva</span>
           <span className="font-sfpro">Illustrator</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={amina}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Amina Anarkulova</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Amina Anarkulova</span>
           <span className="font-sfpro">Face of the project</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={saida}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Saida Namasbekova</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Saida Namasbekova</span>
           <span className="font-sfpro">SMM specialist</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={ramzan}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Ramzan Satkynov</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Ramzan Satkynov</span>
           <span className="font-sfpro">Frontend Developer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={bibinur}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Bibinur Latipzhanova</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Bibinur Latipzhanova</span>
           <span className="font-sfpro">Designer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={nurdin}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Nurdin Taabaldyev</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Nurdin Taabaldyev</span>
           <span className="font-sfpro">Backend Developer</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={sezimtal}/>
-          <button className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Sezimtal Tilekmatova</button>
+          <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">Sezimtal Tilekmatova</span>
           <span className="font-sfpro">Marketer</span>
         </div>
       </div>
