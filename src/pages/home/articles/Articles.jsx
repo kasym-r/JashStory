@@ -1,10 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Card from "../../../components/card/Card";
-import { useInView } from "react-intersection-observer";
-import img from "../../../assets/image2.jpg"
+import { useLanguage } from "../../../context/LanguageContext";
 
 const Articles = () => {
+  const { language } = useLanguage()
 
   const [cards, setCards] = useState([]);
 
@@ -25,7 +25,7 @@ const Articles = () => {
   return (
     <div className="bg-GrayBg p-4 md:p-10 flex flex-col">
       <h2 className="text-white font-unbounded font-medium text-4xl md:text-5xl mb-10">
-        СТАТЬИ
+        {language === "en" ? "ARTICLES" : "СТАТЬИ"}
       </h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 lg:gap-11">
         {cards.map((card) => (

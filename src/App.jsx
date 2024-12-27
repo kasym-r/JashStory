@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import Registration from "./pages/registration/Registration";
 import ArticlePage from "./pages/article/ArticlePage";
 import ScrollToTop from "./scrolltotop/ScrollToTop";
+import PrevOlympiads from "./pages/about/prevOlympiads/PrevOlympiads";
 
 const App = () => {
   return (

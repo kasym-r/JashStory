@@ -74,20 +74,26 @@ const Footer = () => {
           </h3>
           <ul className="mt-2 space-y-2 text-center">
             <li>
-              <a href="/about" className="hover:underline">
+              <a
+                href="/about"
+                className="relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+              >
                 {language === "en" ? "About Us" : "О нас"}
               </a>
             </li>
             <li>
-              <a href="/olympiads" className="hover:underline">
+              <a
+                href="/about#prev-olympiads"
+                className="relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+              >
                 {language === "en" ? "Olympiads" : "Олимпиады"}
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="/reviews" className="hover:underline">
                 {language === "en" ? "Reviews" : "Отзывы"}
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
