@@ -6,6 +6,7 @@ import { useLanguage } from '../../context/LanguageContext'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
+  
   useEffect(() => {
     const storedLanguage = localStorage.getItem('language');
     if (storedLanguage) {
@@ -116,7 +117,7 @@ const Header = () => {
 
         {/* Login Button */}
         <button
-          // onClick={handleLoginClick}
+          onClick={handleLoginClick}
           className="text-white bg-[#333335] rounded-[45px] text-2xl px-[27px] py-[4px] hover:cursor-pointer hover:opacity-90 transition-all duration-300 ease-in-out"
         >
           {language === "en" ? "Sign in" : "Войти"}

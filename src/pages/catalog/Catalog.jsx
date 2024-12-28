@@ -21,19 +21,23 @@ const Catalog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://jashstory.pp.ua/api/post/");
+        const response = await fetch("https://jashstory.pp.ua/api/post/", {
+          headers: {
+            'Accept-Language': language
+          }
+        });
         const data = await response.json();
         setCards(data.results);
         setLoading(false);
       } catch (error) {
         console.error("Ошибка загрузки статьи:", error);
-        setError("Не удалось загрузить статью");
+        setError(language === "en" ? "Failed to load articles" : "Не удалось загрузить статью");
         setLoading(false);
       }
     };
 
     fetchData();
-  }, []);
+  }, [language]);
 
   const filteredCards = cards.filter((card) =>
     card.title.toLowerCase().includes(searchQuery.toLowerCase())

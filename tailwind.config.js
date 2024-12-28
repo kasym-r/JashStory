@@ -17,7 +17,7 @@ export default {
       },
       backgroundImage: {
         'olymp-bg': "url('./assets/japanese-art 1.svg')",
-        'login-bg': "url('./assets/authorization.svg')"
+        'login-bg': "url('./assets/authorization.jpg')"
       },
       screens: {
         'xs': '375px'

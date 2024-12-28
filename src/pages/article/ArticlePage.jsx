@@ -18,15 +18,20 @@ const ArticlePage = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `https://jashstory.pp.ua/api/post/${id}?language=${language}`
+          `https://jashstory.pp.ua/api/post/${id}`,
+          {
+            headers: {
+              'Accept-Language': language
+            }
+          }
         );
         const data = await response.json();
         setArticleData(data);
       } catch (err) {
         console.error("Error loading article:", err);
         setError(
-          language === "en" 
-            ? "Failed to load the article" 
+          language === "en"
+            ? "Failed to load the article"
             : "Не удалось загрузить статью"
         );
       } finally {

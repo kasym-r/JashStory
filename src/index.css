@@ -12,5 +12,7 @@
 html, body {
     background-color: #F9F8F7;
     scroll-behavior: smooth;
+    margin-left: 0;
+    margin-right: 0;
 }
 

@@ -73,14 +73,14 @@ const Team = () => {
           <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">
             Amina Anarkulova
           </span>
-          <span className="font-sfpro">Ambass</span>
+          <span className="font-sfpro">Ambassador</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={saida} />
           <span className="border-[1.5px] border-[#4A4A4A] rounded-3xl ml-[5px] px-7">
             Saida Namasbekova
           </span>
-          <span className="font-sfpro">SMM specialist</span>
+          <span className="font-sfpro">SMM manager</span>
         </div>
         <div className="flex flex-col gap-2 items-start text-[#4A4A4A]">
           <img src={ramzan} />

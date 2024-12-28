@@ -10,16 +10,21 @@ const Articles = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://jashstory.pp.ua/api/post/");
+        const response = await fetch("https://jashstory.pp.ua/api/post/", {
+          headers: {
+            'Accept-Language': language,
+          },
+        });
         const data = await response.json();
         setCards(data.results);
       } catch (error) {
-        console.error("Ошибка при получении данных:", error);
+        console.error("Ошибка загрузки статьи:", error);
+        setError(language === "en" ? "Failed to load articles" : "Не удалось загрузить статью");
       }
     };
 
     fetchData();
-  }, []);
+  }, [language]);
 
   return (
     <div className="bg-GrayBg p-4 md:p-10 flex flex-col">
