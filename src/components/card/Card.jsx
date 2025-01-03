@@ -25,7 +25,7 @@ const Card = ({ id, img, text, bgColor = "bg-white" }) => {
       <img className="w-auto h-[200px] rounded-[23px]" src={img} alt="img" />
       <p className="font-medium text-xl">{text}</p>
       <div className="flex justify-between mt-auto">
-        <span className="font-medium text-[24px]">10$</span>
+        <span className="font-medium text-[24px]"></span>
         <button
           onClick={handleArticleClick}
           className="bg-[#434343] text-white w-[180px] rounded-[24px] hover:opacity-90 transition-all duration-300 ease-in-out"
